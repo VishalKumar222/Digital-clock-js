@@ -1,0 +1,377 @@
+body {
+    background-color: #3D087B;
+    font-family: var(--unnamed-font-family-barlow);
+}
+
+.page-section {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.upper-section {
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    gap: 28vw;
+    width: 85%;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+    height: 81vh;
+    gap: 1.2vw;
+    margin-left: 6%;
+    position: relative;
+    top: -3vh;
+}
+
+.inside-party {
+    margin: 1vh auto;
+}
+
+.clock {
+    background-image: url(clock_logo@2x.png);
+    background-size: 16vw 13vh;
+    background-repeat: no-repeat;
+    width: 17vw;
+    min-height: 14vh;
+}
+
+.set-box {
+    width: 37vw;
+    height: 46vh;
+    border-radius: 11px;
+    background-color: white;
+}
+
+.inside-party:hover {
+    font-size: 0px;
+}
+
+.inside-party:hover::after {
+    content: attr(name);
+    font-size: 23px;
+}
+
+.inner-box-set-box {
+    color: #3D087B;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2vw;
+    min-width: 29vw;
+    min-height: 46vh;
+    margin: 1.5vw;
+}
+
+:is(.items-1, .items-2, .items-3, .items-4) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3vw;
+    max-width: 95%;
+    min-height: 7vh;
+    margin: 0 0.74vw;
+}
+
+.img1 {
+    background-image: url(wake-up.png);
+}
+
+.img2 {
+    background-image: url(lunch_time.svg);
+}
+
+.img3 {
+    background-image: url(nap_time.svg);
+}
+
+.img4 {
+    background-image: url(nap_time.svg);
+}
+
+:is(.img1, .img2, .img3, .img4) {
+    width: 3vw;
+    background-repeat: no-repeat;
+    background-size: 2vw;
+}
+
+.des {
+    width: 8vw;
+    margin: auto 0;
+    min-height: 5vh;
+}
+
+.option-box {
+    min-width: 7vw;
+}
+
+select {
+    width: 15vw;
+    min-height: 5vh;
+}
+
+.alarm-message {
+    min-height: 6vw;
+    max-width: 80%;
+    border-radius: 8px;
+    color: white;
+    background-color: #8A11BF;
+    text-align: center;
+    font-size: 27px;
+}
+
+.alarm-message-inside {
+    margin: 4vh auto;
+}
+
+.left-bottom-box {
+    display: flex;
+    gap: 0.5vw;
+}
+
+.party-time-box {
+    height: 3vw;
+    min-width: 40%;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(to right, #6E54EC, #CB52F8, #FC5EFF, #F1A7C5);
+    font-size: 27px;
+}
+
+.party-time-box:hover {
+    background-image: linear-gradient(to left, #6E54EC, #CB52F8, #FC5EFF, #F1A7C5);
+}
+
+.descrip-box {
+    width: 40%;
+    height: 6vw;
+    color: #F25CFE;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgb(106, 65, 154);
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 1.2vh;
+}
+
+li {
+    float: left;
+}
+
+.right-section {
+    margin-top: 4vh;
+    display: flex;
+    flex-flow: column wrap;
+    width: 38%;
+    height: 71vh;
+}
+
+.right-box1 {
+    display: flex;
+    gap: 0;
+    flex-flow: column wrap;
+}
+
+:is(.box-bottom, .box-middle, .box-top) {
+    display: inline;
+    width: 36vw;
+    height: 18vh;
+    border-radius: 0.8vw;
+}
+
+.box-bottom {
+    z-index: 1;
+    width: 30vw;
+    height: 14vh;
+    position: relative;
+    top: 3.2vw;
+    right: 65vw;
+    opacity: 22%;
+    background-color: rgb(104, 62, 152);
+}
+
+.box-middle {
+    z-index: 2;
+    height: 14vh;
+    width: 32vw;
+    position: relative;
+    top: 2.5vw;
+    right: 34vw;
+    opacity: 71%;
+    background-color: #D3C7E1;
+}
+
+.box-top {
+    display: flex;
+    gap: 1vw;
+    flex-flow: row wrap;
+    z-index: 10;
+    background-color: white;
+}
+
+.right-box2 {
+    color: #8E53F0;
+    font-weight: bold;
+    font-size: 4vh;
+    text-align: center;
+    height: 16vh;
+}
+
+.small-box {
+    color: #8A11BF;
+    background-color: #F6E2FF;
+    text-align: center;
+    width: 4.2vw;
+    height: 11vh;
+    margin: 1.3vh 0.4vw;
+    font-size: 4vh;
+    margin-top: 3vh;
+}
+
+.bg {
+    background-image: url(AM_svg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.right-box3 {
+    width: 37vw;
+    height: 51vh;
+}
+
+#imgsource {
+    width: 97%;
+    height: 100%;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#time-keyword {
+    font-size: 4vh;
+    color: #3D087B;
+    margin: 5vh 1vw;
+}
+
+#down {
+    color: #8A11BF;
+    margin-top: 5vh;
+    font-size: 5vh;
+}
+
+@media screen and (max-width: 600px) {
+    .clock {
+        background-image: url(clock_logo@2x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 66vw;
+        min-height: 14vh;
+    }
+    .upper-section {
+        flex-direction: column;
+        height: 50vh;
+        gap: 4vh;
+    }
+     :is(.box-bottom, .box-middle, .box-top) {
+        width: 78vw;
+    }
+    .small-box {
+        width: 12.2vw;
+    }
+    .box-bottom {
+        width: 62vw;
+        top: -24vh;
+        right: -9vw;
+    }
+    .box-middle {
+        width: 70vw;
+        top: -12vh;
+        right: -4vw;
+    }
+    .page-section {
+        flex-direction: column;
+        width: 100%;
+    }
+    .set-box {
+        width: 89vw;
+        height: 35vh;
+    }
+     :is(.img1, .img2, .img3, .img4) {
+        width: 8vw;
+        background-size: 7vw;
+    }
+    .des {
+        width: 27vw;
+        margin: auto 0;
+        min-height: 5vh;
+    }
+    .option-box {
+        width: 37vw;
+    }
+    select {
+        width: 39vw;
+        min-height: 5vh;
+    }
+    .alarm-message {
+        height: 15vh;
+    }
+    .alarm-message-inside {
+        font-size: large;
+    }
+    .left-section {
+        width: 110%;
+        gap: 3vh;
+    }
+    .right-section {
+        width: 110%;
+    }
+    .left-bottom-box {
+        flex-direction: column;
+        gap: 3vh;
+    }
+    .party-time-box {
+        height: 7vh;
+        width: 60%;
+    }
+    .descrip-box {
+        width: 72%;
+        height: 16vh;
+    }
+    .right-box2 {
+        width: 80%;
+        font-size: large;
+    }
+    .right-box3 {
+        width: 80%;
+        background-size: contain;
+    }
+    #time-keyword {
+        font-size: 4vw;
+    }
+    .small-box {
+        width: 12.2vw;
+        font-size: 6vw;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    li {
+        font-size: medium;
+        float: none;
+    }
+    .right-box3 {
+        height: 63%;
+    }
+    .right-section {
+        margin-left: 6%;
+        margin-top: 2vh;
+    }
+}
